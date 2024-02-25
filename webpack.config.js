@@ -32,6 +32,21 @@ module.exports = {
             type: 'asset/resource',
     
           },
+          {
+
+            test: /\.(csv|tsv)$/i,
+    
+            use: ['csv-loader'],
+    
+          },
+    
+          {
+    
+            test: /\.xml$/i,
+    
+            use: ['xml-loader'],
+    
+          },
     
         ],
     
